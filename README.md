@@ -1,7 +1,38 @@
-# Vue 3 + Vite
+# MapsBox
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+# Setup
 
-## Recommended IDE Setup
+1. Make sure you have NodeJs installed. if you don't have it:
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- [Download it from nodejs.org](https://nodejs.org)
+- [Install it using NVM](https://github.com/nvm-sh/nvm)
+
+2. Clone the project:
+
+```
+git clone https://github.com/karimalik/mapsbox.git
+```
+
+3. Open the project folder:
+
+```
+cd mapsbox
+```
+
+4. Install dependencies:
+
+```
+yarn install
+```
+
+5. Note: if you don't have yarn installed, you can install it globally using npm:
+
+```
+npm install --global yarn 
+```
+
+6. Start a local dev server:
+
+```
+yarn dev
+```
