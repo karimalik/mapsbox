@@ -1,6 +1,6 @@
 <template>
     <div class="heading">
-        <h1>This is my map App</h1>
+        <h1> <span style="text-transform: uppercase;">Maps Box</span>&nbsp; by karimdev </h1>
     </div>
 </template>
 
@@ -10,7 +10,7 @@
 .heading {
     margin: 0;
     padding: 0px;
-    background-color: black;
+    background-color: rgb(42, 121, 178);
     color: white;
     text-align: center;
 }
