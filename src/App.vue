@@ -1,9 +1,9 @@
 <script setup>
-
+import Navbar from './components/Navbar.vue';
 </script>
 
 <template>
-  This is my map App
+  <Navbar />
 </template>
 
 <style scoped>
