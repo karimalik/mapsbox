@@ -13,7 +13,7 @@ const mapContainer = shallowRef(null);
 const map = shallowRef(null);
 
 onMounted(() => {
-    config.apiKey = "qnXHna6T13Sle3TKvEzp";
+    config.apiKey = "CSs2MbP5QAA2s4mib0H8";
 
     const initialState = { lng: 139.753, lat: 35.6844, zoom: 14 };
 
