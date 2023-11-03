@@ -5,30 +5,33 @@
 </template>
 
 <script setup>
-import { Map, MapStyle, config } from "@maptiler/sdk";
-import { shallowRef, onMounted, onUnmounted, markRaw } from "vue";
-import "@maptiler/sdk/dist/maptiler-sdk.css";
+import { Map, MapStyle, Marker, config } from '@maptiler/sdk';
+import { shallowRef, onMounted, onUnmounted, markRaw } from 'vue';
+import '@maptiler/sdk/dist/maptiler-sdk.css';
 
 const mapContainer = shallowRef(null);
 const map = shallowRef(null);
 
 onMounted(() => {
-    config.apiKey = "CSs2MbP5QAA2s4mib0H8";
+    config.apiKey = 'n09tiMVh0Ex76MEbIRfH';
 
-    const initialState = { lng: 139.753, lat: 35.6844, zoom: 14 };
+    const initialState = { lng: 12.6392, lat: 5.6855, zoom: 50 };
 
-    map.value = markRaw(
-        new Map({
-            container: mapContainer.value,
-            style: MapStyle.STREETS,
-            center: [initialState.lng, initialState.lat],
-            zoom: initialState.zoom,
-        })
-    );
+    map.value = markRaw(new Map({
+        container: mapContainer.value,
+        style: MapStyle.STREETS,
+        center: [initialState.lng, initialState.lat],
+        zoom: initialState.zoom
+    }));
+
+    new Marker({ color: "#FF0000" })
+        .setLngLat([12.6392, 5.6855])
+        .addTo(map.value);
+
 }),
     onUnmounted(() => {
         map.value?.remove();
-    });
+    })
 </script>
 
 <style scoped>
