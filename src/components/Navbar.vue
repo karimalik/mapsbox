@@ -1,6 +1,6 @@
 <template>
     <div class="heading">
-        <h1> <span style="text-transform: uppercase;">Maps Box</span>&nbsp; by karimdev </h1>
+        <h1> <span style="text-transform: uppercase;">Maps Box</span> </h1>
     </div>
 </template>
 
